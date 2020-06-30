@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: #0099ff;" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #0099ff;">
+         <center>
+            <Pane fx:id="mainPane" prefHeight="258.0" prefWidth="398.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="login" defaultButton="true" layoutX="75.0" layoutY="136.0" mnemonicParsing="true" onAction="#login" prefHeight="28.0" prefWidth="201.0" style="-fx-background-color: #00ff66;" text="Login" />
+                  <TextField fx:id="username" alignment="CENTER" layoutX="75.0" layoutY="65.0" prefHeight="28.0" prefWidth="201.0" text="Username">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password" alignment="CENTER" layoutX="75.0" layoutY="94.0" prefHeight="28.0" prefWidth="201.0" text="Password" />
+                  <Label fx:id="label" alignment="CENTER" contentDisplay="TOP" layoutX="75.0" layoutY="33.0" prefHeight="32.0" prefWidth="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>

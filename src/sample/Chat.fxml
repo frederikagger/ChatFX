@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="300.0" prefWidth="450.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChatController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <BorderPane id="text" prefHeight="300.0" prefWidth="635.0" style="-fx-background-color: #0099ff;">
+            <center>
+                <Pane prefHeight="316.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea fx:id="textArea" layoutX="46.0" layoutY="73.0" prefHeight="155.0" prefWidth="359.0" />
+                  <TextField fx:id="textField" layoutX="46.0" layoutY="232.0" prefHeight="25.0" prefWidth="216.0" />
+                  <Button blendMode="GREEN" defaultButton="true" layoutX="262.0" layoutY="232.0" mnemonicParsing="false" onAction="#send" prefHeight="25.0" prefWidth="71.0" text="Send" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="13.0" />
+                     </font></Button>
+                  <Button layoutX="333.0" layoutY="232.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: ff5900;" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="13.0" />
+                     </font></Button>
+               </children>
+                </Pane>
+            </center>
+        </BorderPane>
+    </children>
+</GridPane>
